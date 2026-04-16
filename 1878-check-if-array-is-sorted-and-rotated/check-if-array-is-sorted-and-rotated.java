@@ -10,8 +10,8 @@ class Solution {
       for(int i = 1;i<len*2;i++){
         if(nums[(i-1)%len] <= nums[i%len]){
             count++;
-            if (count > len){
-                count = len;
+            if (count == len){
+                // count = len;
                 break;
             }
         }else{
