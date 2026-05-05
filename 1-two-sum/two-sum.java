@@ -7,13 +7,13 @@ class Solution {
         for (left = 0; left < nums.length; left++) {
             right = left + 1;
             while (right < nums.length) {
-                sum = nums[left] + nums[right]; // FIXED
+                sum = nums[left] + nums[right]; 
                 if (sum == target) {
                     return new int[]{left, right};
                 }
                 right++;
             }
         }
-        return new int[]{0, 1}; // fallback (not ideal, but acceptable for now)
+        return new int[]{0, 1}; 
     }
 }
